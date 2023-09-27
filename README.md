@@ -148,3 +148,19 @@ And then run:
 ```sh
 npm test
 ```
+
+## Important
+- Use Node 12
+- Add Polygon to `packages/cli/node_modules/@ethersproject/networks/lib/index.js`
+- Add Polygon to `packages/cli/node_modules/@aragon/truffle-config-v5/truffle-config.js`
+- Modify `providerForNetwork()` in `packages/cli/node_modules/@aragon/truffle-config-v5/truffle-config.js`
+```js
+// Lazily loaded provider
+const providerForNetwork = network => () => {
+  let { rpc } = settingsForNetwork(network);
+  rpc = rpc || defaultRPC(network);
+  return new HDWalletProvider('PRIVATE_KEY', rpc)
+};
+```
+- If IPFS is not working, download manifest.json and artifact.json from the IPFS multihash, then use `require` to import the downloaded files in
+`packages/toolkit/src/dao/exec.js`

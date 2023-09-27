@@ -20,5 +20,5 @@ export const NO_INSTALLATION_MSG =
 
 // version 0.4.22 is deprecated
 // Either update it, or remove it completely to install latest stable version
-// export const GO_IMPL_DIST_VERSION = '0.4.22'
+export const GO_IMPL_DIST_VERSION = '0.22.0'
 export const GO_IMPL_DIST_URL = 'https://dist.ipfs.io'

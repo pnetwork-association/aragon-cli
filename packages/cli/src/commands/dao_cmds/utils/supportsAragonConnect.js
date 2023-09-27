@@ -4,5 +4,5 @@
  * @param {number} Ethereum network id
  */
 export const supportsAragonConnect = (networkId) => {
-  return networkId === 1 || networkId === 4
+  return networkId === 1 || networkId === 4 || networkId === 137
 }

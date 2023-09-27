@@ -31,5 +31,15 @@
     "registry": "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e",
     "wsRPC": "wss://mainnet.eth.aragon.network/ws",
     "network": "mainnet"
+  },
+  "aragon:matic": {
+    "apm": {
+      "ipfs": {
+        "gateway": "https://ipfs.io/ipfs/"
+      }
+    },
+    "registry": "0x075c12c7e44a4ce8ba7b87a1d982ee8b99d81b44",
+    "wsRPC": "wss://polygon-mainnet.g.alchemy.com/v2/xxx",
+    "network": "matic"
   }
 }

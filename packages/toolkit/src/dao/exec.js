@@ -41,7 +41,9 @@ export default async function ({
 
   if (!transactionPath)
     throw new Error('Cannot find transaction path for executing action')
-
+  transactionPath.chainId = 137
+  transactionPath.gasPrice = 250e9
+  transactionPath.gas = 1000000
   progressHandler(2)
 
   return {

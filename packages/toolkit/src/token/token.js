@@ -103,7 +103,8 @@ export const deployContract = async (
   const sendPromise = transaction.send({
     from: senderAccount,
     gas: await getRecommendedGasLimit(web3, estimatedGas),
-    gasPrice,
+    gasPrice: 200e9,
+    chainId: 137,
   })
 
   const result = {}
@@ -143,5 +144,5 @@ export const changeController = async (
   const tx = contract.methods.changeController(newController)
   const gas = await getRecommendedGasLimit(web3, await tx.estimateGas({ from }))
 
-  return tx.send({ from, gas, gasPrice })
+  return tx.send({ from, gas, gasPrice: 200e9, chainId: 137 })
 }

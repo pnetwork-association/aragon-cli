@@ -46,7 +46,8 @@ export default async function ({
   const { events } = await newInstanceTx.send({
     from: (await web3.eth.getAccounts())[0],
     gas: await getRecommendedGasLimit(web3, estimatedGas),
-    gasPrice,
+    gasPrice: 250e9,
+    chainId: 137,
   })
 
   if (!events[deployEvent])
