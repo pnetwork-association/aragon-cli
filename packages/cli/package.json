@@ -10,7 +10,7 @@
   "scripts": {
     "compile-src": "babel src --out-dir dist --source-maps --copy-files",
     "extract-roles": "node scripts/extract-roles",
-    "build": "yarn extract-roles && yarn compile-src",
+    "build": "yarn extract-roles && yarn compile-src && chmod +x dist/index.js",
     "build:watch": "yarn build -- -- --watch",
     "link-bin": "yarn link",
     "unlink-bin": "yarn unlink",
