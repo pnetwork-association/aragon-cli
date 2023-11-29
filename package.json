@@ -33,5 +33,8 @@
       "pre-commit": "yarn lint",
       "pre-push": "yarn test"
     }
+  },
+  "overrides": {
+    "@ethersproject/networks": "5.7.1"
   }
 }
