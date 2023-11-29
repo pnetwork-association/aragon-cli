@@ -41,5 +41,15 @@
     "registry": "0x075c12c7e44a4ce8ba7b87a1d982ee8b99d81b44",
     "wsRPC": "wss://polygon-mainnet.g.alchemy.com/v2/xxx",
     "network": "matic"
+  },
+  "aragon:xdai": {
+    "apm": {
+      "ipfs": {
+        "gateway": "https://127.0.0.1:5001/ipfs"
+      }
+    },
+    "registry": "0xC2463283b05e20C9fa697A8C8647eC645146BfEe",
+    "wsRPC": "https://powerful-hardworking-night.xdai.quiknode.pro/xxx/",
+    "network": "xdai"
   }
 }
